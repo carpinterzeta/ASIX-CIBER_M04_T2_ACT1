@@ -1,0 +1,260 @@
+/* Autor: Alberto Carpintero */
+
+/* Estilos CSS */
+body {
+	display: flex;
+	flex-wrap: wrap;
+	min-height: 100vh;
+	font-family: 'Open Sans';
+}
+
+/* logo superior */
+
+.idlogo {
+  	float: left;
+	padding-top: 10px;
+}
+
+.idlogo img {
+  max-width: 55px;
+  float: left;
+  margin: 0 10px 0 0;
+}
+
+/* Estilo del nav */
+
+nav {
+	-webkit-flex: 1;
+  	-ms-flex: 1;
+  	flex: 1;
+	float: right;
+}
+
+
+nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	text-align: right;
+}
+
+nav ul li {
+	display: contents;
+	
+}
+
+nav ul a  {
+	border: 1px solid black;
+	padding: 20px;
+	margin: 5px;
+	display: inline-block;
+	text-align: center;
+	min-width: 250px;
+	background-color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+
+}
+
+
+nav ul a:hover{
+	background-color: #98f5bf;
+}
+
+
+
+/* Estilo flex box section */
+
+section {
+  	display: -webkit-flex;
+  	display: flex;
+  	flex-direction: column;
+  	color: #ffffff;
+  	flex: 3;
+  	background-color: #272626;
+	padding: 10px;
+}
+
+section {
+
+	-webkit-flex: 3;
+  	-ms-flex: 3;
+  	flex: 3;
+  	background-color: #272626;
+  	padding: 10px;
+}
+
+/* Estilo bloque1 */
+.texto1 {
+	text-align: center;
+	width: 32%;
+	background: rgba(2, 2, 2, 0.5);
+	background-position: center;
+	justify-content: center;
+	height: 160px;
+	border-radius: 3em;
+	margin-right: 50px;
+	min-width: 290px;
+
+}
+
+.fondo1{
+	max-width: 100%;
+	height: 300px;
+	display: flex;
+	align-items: center;
+	justify-content: right;
+	background-image: linear-gradient(to right, rgb(0 0 0 / 0.5),rgb(0 0 0 / 0.5)), url(../imgs/fondo_1.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.boton {
+	background-color: #98f5bf;
+	color: black;
+	border: 2px solid #555555;
+	border: none;
+ 	color: white;
+ 	padding: 8px 8px;
+  	text-align: center;
+ 	display: inline-block;
+  	font-size: 16px;
+  	margin: 4px 2px;
+  	transition-duration: 0.4s;
+  	cursor: pointer;
+	border-radius: 10px;
+}
+
+.boton a {
+	text-decoration: none;
+}
+	  
+.boton:hover {
+	background-color: #555555;
+
+
+	  
+}
+
+.boton a:hover {
+	text-decoration: none;
+	color: white;
+}
+
+
+/* Estilo bloque 2 */
+
+.bloque2 {
+	text-align: center;
+	justify-content: center;
+}
+
+.bloque2 img {
+	margin: auto;
+	justify-items: center;
+	width: 20px;
+	height: 20px;
+}
+
+/* Estilo de la sección 2 */
+.section2 {
+	text-align: center;
+}
+
+/* Estilo footer */
+
+footer {
+	text-align: center;
+	background-color: black;
+	align-self: flex-end;
+	width: 100%;
+
+}
+
+footer p a {
+	color: #98f5bf;
+}
+
+
+/* Estilo galería */
+
+.section__galeria {
+	align-items: center;
+	justify-content: center;
+	background-color: #ffffff;
+	color: black;
+}
+
+.gallery-image {
+	padding: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.gallery-image img {
+	height: 250px;
+	width: 350px;
+	transform: scale(1.0);
+	transition: transform 0.4s ease;
+}
+
+.linkgaleria {
+	text-decoration: none;
+}
+
+.img-box {
+	box-sizing: content-box;
+	margin: 10px;
+	height: 250px;
+	width: 350px;
+	overflow: hidden;
+	display: inline-block;
+	color: white;
+	position: relative;
+	background-color: white;
+}
+
+.caption {
+	position: absolute;
+	bottom: 5px;
+	left: 20px;
+	opacity: 0.0;
+	transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.transparent-box {
+	height: 250px;
+	width: 350px;
+	background-color:rgba(0, 0, 0, 0);
+	position: absolute;
+	top: 0;
+	left: 0;
+  	transition: background-color 0.3s ease;
+}
+
+.img-box:hover img { 
+	transform: scale(1.1);
+}
+
+.img-box:hover .transparent-box {
+	background-color:rgba(0, 0, 0, 0.5);
+}
+
+.img-box:hover .caption {
+	transform: translateY(-20px);
+	opacity: 1.0;
+}
+
+.img-box:hover {
+	cursor: pointer;
+}
+
+.caption > p:nth-child(2) {
+	font-size: 0.8em;
+}
+
+.opacity-low {
+	opacity: 0.8;
+}
