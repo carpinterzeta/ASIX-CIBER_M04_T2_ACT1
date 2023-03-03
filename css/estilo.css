@@ -129,6 +129,7 @@ section {
 
 .boton a {
 	text-decoration: none;
+	color: black;
 }
 	  
 .boton:hover {
