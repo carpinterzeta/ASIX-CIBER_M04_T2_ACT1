@@ -11,13 +11,13 @@ body {
 /* logo superior */
 
 .idlogo {
-  	float: left;
+  	display: flex;
+	allign-items: center;
 	padding-top: 10px;
 }
 
 .idlogo img {
   max-width: 55px;
-  float: left;
   margin: 0 10px 0 0;
 }
 
