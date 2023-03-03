@@ -53,7 +53,6 @@ nav ul a  {
 	background-color: white;
 	text-decoration: none;
 	text-transform: uppercase;
-	color: black;
 
 }
 
@@ -115,7 +114,6 @@ section {
 	color: black;
 	border: 2px solid #555555;
 	border: none;
- 	color: white;
  	padding: 8px 8px;
   	text-align: center;
  	display: inline-block;
@@ -134,6 +132,7 @@ section {
 	  
 .boton:hover {
 	background-color: #555555;
+	color: black;
 
 
 	  
