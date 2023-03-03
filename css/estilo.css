@@ -260,6 +260,7 @@ footer p a {
 }
 
 /* Estilos para dispositivos móviles */
+
 @media screen and (max-width: 767px) {
   body {
     flex-direction: column;
@@ -357,28 +358,3 @@ footer p a {
   }
 }
 
-/* Estilos para pantallas grandes */
-@media screen and (min-width: 1200px) {
-  nav ul a {
-    min-width: 250px;
-  }
-
-  .texto1 {
-    width: 28%;
-    margin-right: 50px;
-  }
-
-  .fondo1 {
-    height: 500px;
-  }
-
-  .gallery-image img {
-    height: 250px;
-    width: 350px;
-  }
-
-  .img-box {
-    height: 250px;
-    width: 350px;
-  }
-}
