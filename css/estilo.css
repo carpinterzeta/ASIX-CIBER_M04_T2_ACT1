@@ -24,8 +24,6 @@ body {
 /* Estilo del nav */
 
 nav {
-	-webkit-flex: 1;
-  	-ms-flex: 1;
   	flex: 1;
 	float: right;
 }
@@ -39,7 +37,7 @@ nav ul {
 }
 
 nav ul li {
-	display: contents;
+	display: inline-bloc;
 	
 }
 
@@ -59,6 +57,7 @@ nav ul a  {
 
 nav ul a:hover{
 	background-color: #98f5bf;
+	color: white;
 }
 
 
