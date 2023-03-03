@@ -258,3 +258,127 @@ footer p a {
 .opacity-low {
 	opacity: 0.8;
 }
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 767px) {
+  body {
+    flex-direction: column;
+  }
+
+  nav {
+    float: none;
+    margin-top: 20px;
+  }
+
+  nav ul {
+    text-align: center;
+  }
+
+  nav ul li {
+    display: block;
+  }
+
+  nav ul a {
+    display: block;
+    margin: 5px 0;
+    min-width: auto;
+  }
+
+  .texto1 {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .fondo1 {
+    height: 200px;
+  }
+
+  .gallery-image img {
+    height: 180px;
+    width: 250px;
+  }
+
+  .img-box {
+    height: 180px;
+    width: 250px;
+  }
+}
+
+/* Estilos para tabletas y pantallas pequeñas */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  nav ul a {
+    min-width: 200px;
+  }
+
+  .texto1 {
+    width: 48%;
+    margin-right: 30px;
+  }
+
+  .fondo1 {
+    height: 300px;
+  }
+
+  .gallery-image img {
+    height: 200px;
+    width: 280px;
+  }
+
+  .img-box {
+    height: 200px;
+    width: 280px;
+  }
+}
+
+/* Estilos para pantallas medianas */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  nav ul a {
+    min-width: 220px;
+  }
+
+  .texto1 {
+    width: 30%;
+    margin-right: 30px;
+  }
+
+  .fondo1 {
+    height: 400px;
+  }
+
+  .gallery-image img {
+    height: 220px;
+    width: 320px;
+  }
+
+  .img-box {
+    height: 220px;
+    width: 320px;
+  }
+}
+
+/* Estilos para pantallas grandes */
+@media screen and (min-width: 1200px) {
+  nav ul a {
+    min-width: 250px;
+  }
+
+  .texto1 {
+    width: 28%;
+    margin-right: 50px;
+  }
+
+  .fondo1 {
+    height: 500px;
+  }
+
+  .gallery-image img {
+    height: 250px;
+    width: 350px;
+  }
+
+  .img-box {
+    height: 250px;
+    width: 350px;
+  }
+}
